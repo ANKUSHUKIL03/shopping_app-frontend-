@@ -1,26 +1,27 @@
 import React from "react";
-import Img1 from"../images/Img1.jpeg";
-import Img2 from"../images/Img2.jpeg";
-import Img3 from"../images/Img3.jpeg";
+import hero1 from "../images/imgsub.png";
+import hero2 from "../images/hero2.png";
+import hero3 from "../images/hero3.png";
 import "./slidersize.css";
-function Slider()
-{
-    return(
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+
+function Slider() {
+  return (
+
+    <div id="carouselExampleInterval" class="carousel slide container-fluid" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="1500">
-          <img src={Img2} class="d-block w-100 slidersize" alt="..."/>
+          <img src={hero1} class="d-block w-100 slidersize" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="1500">
-          <img src={Img1} class="d-block w-100 slidersize" alt="..."/>
+          <img src={hero2} class="d-block w-100 slidersize" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src={Img3} class="d-block w-100 slidersize" alt="..."/>
+          <img src={hero3} class="d-block w-100 slidersize" alt="..." />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -33,6 +34,6 @@ function Slider()
       </button>
     </div>
 
-    );
+  );
 }
 export default Slider;

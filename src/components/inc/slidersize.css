@@ -1,5 +1,18 @@
 .slidersize
 {
-    height: 450px;
+    height: 270px;
     width: 100%;
 }
+.styles
+{
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+}
+.hovering:hover{
+        background-color: lightgreen;
+}
+.hov:hover {
+    color: blue; /* Change color when hovered */
+    font-size: 20px; /* Increase font size when hovered */
+  }
+  
